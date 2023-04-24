@@ -1,3 +1,12 @@
+window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('sw.js');
+  }
+}
+
 const answerForm = document.getElementById('answer-form');
 const answerInput = document.getElementById('answer');
 const resultElement = document.getElementById('result');
